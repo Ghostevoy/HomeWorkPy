@@ -34,6 +34,7 @@ minIndex = 0
 
 for i in range(len(num18)):
     if abs(enterNum - num18[i]) < minDelta:
+        minDelta = abs(enterNum - num18[i])
         minIndex = i
 
 print(f'Наиболее приблеженный к указанному значению элемент находится под индексом {minIndex} и равен {num18[minIndex]}')
